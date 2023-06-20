@@ -1,0 +1,36 @@
+html{
+    --background:#D9D9D9;
+    --couleur_bouton:#8C74E9;
+    --onglet:#28A4A9;
+    --ecriture:'Comfortaa';
+    --couleur_titre:#ffffff;
+    --couleur_ecriture:#000000;
+    --texte_bouton:#ffffff;
+    --police_paragraphe:1rem;
+    --police_titre:2rem;
+    --police_bouton:32px;
+    }
+    .page{
+        width: 100%;
+        height: 800px;
+        background-color: var(--background);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redirection{
+        width: 50%;
+        height: 50%;
+        background-color: #28A4A9;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redirection > p{
+        font-size: 36px;
+        font-family:var(--ecriture);
+    }

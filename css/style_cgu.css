@@ -1,0 +1,84 @@
+ /*responsive? demander par Antoine*/
+ html{
+    --background:#D9D9D9;
+    --couleur_bouton:#8C74E9;
+    --onglet:#28A4A9;
+    --ecriture:'Comfortaa';
+    --couleur_titre:#ffffff;
+    --couleur_ecriture:#000000;
+    --texte_bouton:#ffffff;
+    --police_paragraphe:1rem;
+    --police_titre:2rem;
+    --police_bouton:1rem;
+ }
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:var(--background);
+}
+
+.fond{
+    margin-top: 8%;
+    width: 100vw;
+    height: 96vh;
+}
+
+h1 {
+    display: flex;
+    margin-left: 25%;
+    font-size: 50px;
+    font-family: var(--ecriture);
+    text-align: center;
+}
+
+h2 {
+    display: flex;
+    margin-left: 30px;
+    font-size: 30px;
+    color:var(--onglet);
+    font-family: var(--ecriture);
+}
+
+.p1 {
+    display: flex;
+    margin-left: 30px;
+    font-size: 18px;
+    font-family: var(--ecriture);
+    padding-right: 1%;
+}
+
+.p2 {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-indent: 40px;
+    font-size: 18px;
+    font-family: var(--ecriture);
+}
+
+.p3 {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-indent: 40px;
+    font-size: 18px;
+    font-family: var(--ecriture);
+}
+
+.p4 {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-indent: 40px;
+    font-size: 18px;
+    font-family: var(--ecriture);
+}
+
+.p5 {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-indent: 40px;
+    font-size: 18px;
+    font-family: var(--ecriture);
+}

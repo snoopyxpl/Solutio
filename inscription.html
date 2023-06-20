@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--pour la taille de l'�cran-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--le nom de l'onglet-->
+    <title>Solutio</title>
+
+    <!--Impl�mentation du CSS pour la bar de navigation-->
+
+    <link rel="stylesheet" href="css/style_nav_bar.css " />
+    <link rel="stylesheet" href="css/style_inscription.css " />
+
+</head>
+
+<body>
+
+    <!-- Barre de Navigation  -->
+
+    <div class="bande_d_accueil">
+        <div class="logo_entreprise"><a href=""><img src="image/logo_entreprise.png"></a></div>
+        <ul class="bande_d_accueil">
+            <li><a href="">SOLUTIO</a></li>
+            <li><a href="">ACCUEIL</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">CONSEILS</a></li>
+            <li><a href="">MON COMPTE</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="">A PROPROS</a></li>
+            <li><div class="mon_profil"><a href=""></a></div></li>
+        </ul>
+    </div>
+
+    <div class="page">
+        <div class="center">
+
+            <div class="title"><h1>Creation de votre compte</h1></div>
+            <div class="info">
+                <div class="label">
+                    <div>Nom</div>
+                    <div>Prenom</div>
+                    <div>Adresse Mail</div>
+                    <div>Nom d'Utilisateur</div>
+                    <div>Mot de Passe</div>
+                    <div>Confirmation<br /> Mot de Passe</div>
+                    <div>Sexe</div>
+                    <div>Age</div>
+                    <div>Date de Naissance</div>
+                </div>
+
+                <div class="input">
+                    <form class="input_texte" method="post" action="php/inscription.php">
+                        <input type="text" name="nom" />
+                        <input type="text" name="prenom" />
+                        <input type="email" name="adresse_mail" />
+                        <input type="text" name="nom_utilisateur" />
+                        <input type="password" name="mot_de_passe" />
+                        <input type="password" name="confirmation_mot_de_passe" />
+                        <select>
+                            <option value="homme">Masculin</option>
+                            <option value="femme">Feminin</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                        <input type="number" name="age" />
+                        <input type="date" name="date_naissance" />
+
+                </div>
+
+                <div class="imput_photo">
+                     <div class="photo">
+                        <input type="image" name="photo_profil" />
+                    </div>
+                </div>
+            </div>
+            
+            <div class="submit">
+                    <input type="submit" value="Valider">
+                
+            </div>
+                    </form>
+        </div>
+    </div>
+</body>
+</html>

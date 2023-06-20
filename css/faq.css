@@ -1,0 +1,151 @@
+
+    .faq_conteneur{
+        padding-top: 3cm;
+        
+    }
+    .faq_conteneur h1{
+        text-align: center;
+    }
+    div.bande_d_accueil {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    background-color:#7FBEC1;
+    z-index: 3;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+ul.bande_d_accueil {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #7FBEC1;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+    ul.bande_d_accueil > li a:link {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    ul.bande_d_accueil > li a:visited {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    ul.bande_d_accueil > li a {
+        text-align: center;
+        display: block;
+        padding: 22px;
+        height: 100%;
+        margin: 5px;
+        background-color: #28A4A9;
+        font-family: Impact;
+        font-size: 21px;
+    }
+
+        ul.bande_d_accueil > li a:hover {
+            background-color: grey;
+        }
+
+.logo_entreprise{   
+    flex-grow : 3;
+    z-index: 3;
+}
+.mon_profile{
+    width: 300px;
+    height: auto;
+    background-image: url(compte.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+@media (max-width: 1200px) {
+     .logo_entreprise{
+        cursor: pointer;
+    }
+
+    ul.bande_d_accueil{
+        display: none;
+    }
+
+    ul.bande_d_accueil li{
+        margin : 5px;
+        border : 2px solid black;
+    }
+    
+    div.bande_d_accueil{
+        position : relative;
+    }
+
+
+    div.bande_d_accueil:hover ul.bande_d_accueil, div.bande_d_accueil{
+        display : flex;
+        flex-flow: column nowrap;
+    } 
+
+    
+}
+
+.dropbtn {
+  background-color: #1BA8AD;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 20cm;
+  height: 2cm;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.dropdown-content {
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.question_conteneur{
+    display: flex;
+    justify-content: space-around;
+}
+.droite{
+    display: flex;
+    flex-direction: column;
+    justify-items:space-between ;
+}
+.gauche{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,59 @@
+/*responsive? demander par Antoine*/
+html{
+    --background:#D9D9D9;
+    --couleur_bouton:#8C74E9;
+    --onglet:#28A4A9;
+    --ecriture:'Comfortaa';
+    --couleur_titre:#ffffff;
+    --couleur_ecriture:#000000;
+    --texte_bouton:#ffffff;
+    --police_paragraphe:1rem;
+    --police_titre:2rem;
+    --police_bouton:1rem;
+    --bordure:#000000;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:var(--ecriture);
+    background-color:var(--onglet) ; /*#01989E*/
+}
+h2{
+    color:var(--couleur_titre);
+    padding:5px 150px;
+    font-family: var(--ecriture);
+}
+.container_contact{
+    display:flex;
+    flex-direction:row;
+}
+.contact_form{
+    left:50%;
+    padding:30px 150px;
+}
+.input-field{
+    width:400px;
+    height:40px;
+    border-radius: 12px;
+    border: solid 1px var(--bordure);
+    margin-bottom: 15px;
+    font-family: var(--ecriture);
+    
+}
+button{
+    background-color:var(--couleur_bouton);
+    color:var(--texte_bouton);
+    border-radius:50px;
+    border:none;
+    width:150px;
+    height:40px;
+    font-family: var(--ecriture);
+}
+
+p{
+    background-color: green;
+    padding:15px;
+   font-family: var(--ecriture);
+}

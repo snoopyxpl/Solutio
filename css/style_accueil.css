@@ -1,0 +1,323 @@
+/*création de variable*/
+html{
+    --background:#D9D9D9;
+    --couleur_bouton:#8C74E9;
+    --onglet:#28A4A9;
+    --bleu: #74c4e9;
+    --ecriture:'Comfortaa';
+    --couleur_titre:#ffffff;
+    --couleur_ecriture:#000000;
+    --texte_bouton:#ffffff;
+    --police_paragraphe:1rem;
+    --police_titre:2rem;
+    --police_bouton:1rem; /*la taille du texte dans les boutons*/
+}
+/*faire suppression de ligne inutile et mettre les variables pour la police*/
+    /* body la page entière*/
+    body{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--background);
+    }
+        /* page sans la narbar */
+        .accueil{
+            top: 7%;
+            position: relative;
+            width: 100vw;
+            height: 96vh;
+        }
+            /* OS le rectangle qui contient le reste de os */
+            .os{
+                position: relative;
+                width: 100%;
+                height: 20%;
+                margin-left: 33%; 
+                float: left;
+                top: 13%;
+            }
+
+                /* OS rectangle la couleur et l'image */
+                .os_rectangle{
+                    position: relative;
+                    width: 32%;
+                    height: 100%;
+                    background: var(--background);
+                    background-image: url("../image/optimal_steeple.png");
+                    background-position: center;  
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    text-align: center;
+                    z-index: 10;   
+                }
+
+            /*une boite qui permet d'aligner deux petites boites*/
+            .grille{
+                position: relative;
+                width: 100%;
+                height: 50%;
+                display: flex;
+                margin: auto;
+            }
+                
+                /*Presentation et bracelet aka les petites boites */
+                .presentation, .bracelet{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0 5%;
+
+                }
+
+                /* les rectangles de couleur*/
+                .rectangle_presentation,.bracelet_rectangle{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    background: VAR(--onglet);
+                    border-radius: 50px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                /*paragraphe du rectangle ou il y a le bracelet*/
+                .bracelet_rectangle p{
+                    position: relative;
+                    height: 30%;
+                    width: auto;
+                    font-family: var(--ecriture);
+                    font-style: normal;
+                    margin:0 auto 0 auto;
+                    font-weight: normal;   
+                    font-size: var(--police_paragraphe);
+                    line-height: 100%; 
+                    color: var(--couleur_ecriture);
+                    padding-bottom: 0%;
+                    display: flex;
+                    align-items: center;
+                }
+                
+                /* le titre : UNE NOUVELLE EXPERIENCE SANTE */
+                .rectangle_presentation h1{
+                    font-weight: normal;
+                    position: relative;
+                    height: 50%;
+                    display: flex;
+                    align-items: center;
+                    font-family: var(--ecriture);
+                    font-style: normal; 
+                    font-size: var(--police_titre);
+                    line-height: 100%;
+                    color:var(--couleur_titre);
+                    padding-right: 30%;
+                    margin: 0% 0% 0 5%;
+                }
+
+                /*les caratéristiques des boutons*/
+                .bouton_acheter, .bouton_prix{
+                    position: relative;
+                    font-weight: normal;
+                    height: 10%;
+                    z-index: 2;
+                    background: VAR(--couleur_bouton);
+                    border-radius: 25px;
+                    font-family:var(--ecriture);
+                    font-style:normal;
+                    font-size: var(--police_bouton);
+                    line-height: 100%;                             
+                    color:var(--texte_bouton);
+                    border-color: VAR(--couleur_bouton);
+                    align-items: center;
+                    text-align: center;
+                }
+                /* bouton_acheter */
+                .bouton_acheter{            
+                    margin-left: 25%;
+                    width: 42.5%;
+                    margin-top: 5%;
+                }
+
+
+                /* bouton_prix */
+                .bouton_prix{
+                    margin-left:58%;
+                    margin-top: 2%;
+                    width: 30%;
+                    margin-right: auto;
+                }
+    
+                    /* bouton_prix et bouton_acheter qui permet de changer de couleur quand on passe la souris*/                
+                    .bouton_prix:hover,.bouton_acheter:hover{
+                        background-color: var(--texte_bouton);
+                        color: var(--couleur_bouton);
+                        z-index: 2;
+                    }
+
+
+                /*image bracelet*/
+                #ima_bra{
+                    position: relative;
+                    background-position: center;
+                    width: 60%;
+                    height: 70%;
+                    background-image: url("../image/bracelet_v2.png");
+                    background-size: contain;
+                    background-repeat: no-repeat; 
+                    margin-left: 20%;
+                    margin-right: auto;
+                  
+                }
+
+        /*pour les telephones un nouveau design*/
+        .telephone{
+            position: relative;
+            width: 100%;
+            height: 50%;
+            display: none;
+        }
+
+            /*onglet pour les information*/
+            .telephone_rectangle{
+                position: relative;
+                width: 100%;
+                height: 50%;
+                background: var(--onglet);
+                border-radius: 50px;
+                display: flex;
+                flex-direction: column;
+                top: 9%;
+            }
+
+                /*le titre de telephone "UNE NOUVELLE EXPERIENCE SANTE"*/
+                .telephone_rectangle h1{
+                    position: relative;
+                    font-family: var(--ecriture);
+                    font-style: normal;
+                    font-weight: bold;   
+                    font-size: 20px;
+                    line-height: 100%;
+                    color: var(--couleur_titre);
+                    text-align: center;
+                    margin: 15px 18px 15px 18px ;
+                }
+                /*le paragraphe*/
+                .telephone_rectangle p{
+                    position: relative;
+                    font-family: var(--ecriture);
+                    font-style: normal;
+                    font-size: 18px;
+                    line-height: 100%;
+                    margin: 0 0 0 25% ;
+                    color: var(--couleur_ecriture);
+                }
+
+                /*la zone des boutons*/
+                .telephone_bouton{
+                    position: relative;
+                    width: 50%;
+                    height: 8%;
+                    display: flex;
+                    float: left;
+                    padding: 0;
+                }
+
+                /*les caratéristiques des boutons*/
+                .telephone_bouton_acheter,.telephone_bouton_prix{
+                    color: var(--texte_bouton);
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    background: VAR(--couleur_bouton);
+                    border-radius: 25px;
+                    font-family: var(--ecriture);
+                    font-style: normal;
+                    font-weight: 100;
+                    font-size: 12px;
+                    line-height: 100%;             
+                    border-color: VAR(--couleur_bouton); 
+                    z-index: 2; 
+                    justify-content: center;
+                    justify-items: center;
+                    text-align: center;
+                    display: inline-block;           
+                }
+
+                    /*bouton acheter pour telephone le placement*/
+                    .telephone_bouton_acheter{
+                        left: 4%;        
+                    }
+
+                    /*bouton prix pour telephone le placement*/
+                    .telephone_bouton_prix{
+                        left: 96%;
+                    }
+
+                    /* bouton_prix et bouton_acheter qui permet de changer de couleur quand on passe la souris*/                
+                    .telephone_bouton_acheter:hover,.telephone_bouton_prix:hover{
+                        background-color: var(--texte_bouton);
+                        color: var(--couleur_bouton);
+                        z-index: 2;
+                    }
+    @media screen and (max-width:840px) {
+        html{
+            --police_titre: 1rem;
+        } 
+    }
+
+    @media screen and (max-width:611px) {
+         /*paragraphe du rectangle ou il y a le bracelet*/ 
+        .bracelet_rectangle p{
+            margin: auto 5% auto 5%;
+        }
+
+        /*image bracelet*/
+        #ima_bra{
+            height: 40%;
+            margin-top: 5%;
+        }
+    }
+
+/*responsive pour telephone*/
+@media screen and (max-width:425px) {
+        .accueil{
+            top: 0%;
+        }
+        
+                /* OS le rectangle qui contient le reste de os */
+                .os{
+                    position: relative;
+                    width: 100%;
+                    height: 10%;
+                    justify-items: center;
+                    float: left;
+                    margin-left: 0;
+                    top: 4%;    
+                }
+
+                 /* OS rectangle la couleur et l'image */
+                .os_rectangle{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 10;   
+                }
+        
+        /*une boite qui permet d'aligner deux petites boites*/
+        .accueil{
+        display: none;
+        }
+
+            /*pour les telephones un nouveau design*/
+            .telephone{
+                display: initial;
+            }
+
+                /*image bracelet*/
+                #ima_bra{   
+                    bottom: 0;
+                    left: 0;    
+                    position: relative;
+                    margin: auto;
+                }
+
+    }
+ 

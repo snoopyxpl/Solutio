@@ -1,0 +1,276 @@
+
+html{
+    --ecart:0 2%; /* écart pour les photos*/
+    --photo_largeur:7vw;
+    --onglet:#28A4A9;
+    --police_titre:'Comfortaa';
+    --police_ecriture:'Comfortaa';
+    --background:#D9D9D9;
+    --texte:1rem;
+    --titre:2rem;
+    --couleur_titre:#000000;
+    --couleur_texte_photo:#000000;
+    --couleur_ecriture:#ffffff;
+    --couleur_bouton: #32d9af;
+    --bordure_bouton:#1CA8AD;
+}
+
+    /* body la page entière*/
+    body{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: var(--background);
+    }
+
+    /* page sans la narbar */
+        .page{
+            position: relative;
+            width: 100%;
+            height: 91.1%;
+        }
+
+            /* le titre qui est Qui sommes nous? */
+            .page h1{ 
+                position: relative;
+                width: 100%;
+                margin-top: 7%;
+                font-family: var(--police_titre);
+                font-size: var(--titre);
+                font-style: normal;
+                align-items: center;
+                text-align: center;
+                color: var(--couleur_titre);
+            }
+
+            /* zone ou il y a tous les informations de G3B */
+            .zone_photo_de_nous{
+                position: relative;
+                width: 100%;
+                left: 18%;
+                margin-top: 5%;
+                display: flex;
+            }
+
+                /* zone ou il y a tous les informations de G3B */
+                .zone_elodie,.zone_abdessalam,.zone_pierre
+                ,.zone_antoine,.zone_jeanne,.zone_hugo{
+                position: relative;
+                width: 6.8%;
+                height: 100%;
+                padding: var(--ecart);
+                }
+
+
+                    /* zone ou il y a tous les textes de G3B */
+                    .texte_elodie,.texte_abdessalam,.texte_pierre
+                    ,.texte_antoine,.texte_jeanne,.texte_hugo{
+                    position: relative;
+                    width:100%;
+                    height: 19.2%;
+                    font-family: var(--police_ecriture);
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 100%;
+                    align-items: center;
+                    text-align: center;
+                    color: var(--couleur_texte_photo); 
+                    padding: 9% 0;
+                    }
+
+                     /* photo elodie */
+                    .photo_elodie{
+                    position: relative;
+                    width: 100% ;
+                    height: var(--photo_largeur);
+                    background: #FFFFFF;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    }
+
+
+                    /* photo Abdessalam */
+                    .photo_abdessalam{
+                        position: relative;
+                        width: 100% ;
+                        height: var(--photo_largeur);
+                        background: #FFFFFF;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+
+                    /* photo pierre */
+                    .photo_pierre{
+                        position: relative;
+                        width: 100% ;
+                        height: var(--photo_largeur);
+                        background: #FFFFFF;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+
+                    /* photo Jeanne */
+                    .photo_jeanne{
+                        position: relative;
+                        width: 100% ;
+                        height: var(--photo_largeur);
+                        background: #FFFFFF;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+
+                    /* photo antoine */
+                    .photo_antoine{
+                        position: relative;
+                        width: 100% ;
+                        height: var(--photo_largeur);
+                        background: #FFFFFF;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+
+                    /* photo hugo */
+                    .photo_hugo{
+                        position: relative;
+                        width: 100% ;
+                        height: var(--photo_largeur);
+                        background: #FFFFFF;
+                    }
+
+            /* rectangle qui somme-nous? le rectangle de couleur verte*/
+            /*grand rectangle vert/bleu*/
+            /* .rectangle_qui_somme_nous{
+                position: relative;
+                width: 100%;
+                height: 14%;
+                margin: 5% 0 5% 0;
+            } */
+                /* rectangle qui somme-nous? le rectangle de couleur verte*/
+               /*grand rectangle vert/bleu centrée*/
+            .rectangle_qui_somme_nous{
+                position: relative;
+                width: 70%;
+                height: auto;
+                margin: 5% auto 10% auto;
+            }
+
+
+
+                    /* le blabla en question : Chez Solutio, nous travaillons avec vous pour optimiser votre sommeil de haut en bas. notre objectif est votre bien être. Notre équipe formée des meilleurs ingénieurs Francais pourront vous suivre et vous aidez à dormir dans les meilleures conditions possibles. --> Notre innovation: relier votre montre a votre espace de sommeil. Tous sera connectés pour optimiser votre sommeil. */
+                    .rectangle_qui_somme_nous p{
+                        position: relative;
+                        font-family: var(--police_ecriture);
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: var(--texte);
+                        line-height: 100%;
+                        align-items: center;
+                        text-align: center;
+                        color:var(--couleur_ecriture);
+                        background: var(--onglet);
+                        padding: 1%;
+                        /*arrondie du rectangle*/
+                        border-radius: 60px;
+                    }
+
+            /* zone_moyen de nous contacter où on peut nous laisser un message */
+            .zone_moyen_de_nous_contacter{
+                position: relative;                                                                                                                                                                                                                                                                                                                                                                                                                     /*FrB Toinou Antoine */
+                width: 50%;
+                display: flex;
+                border-radius: 60px;
+                background-color: var(--onglet);
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 3%;
+            }
+                /*le titre "nous contacter"*/
+                .zone_moyen_de_nous_contacter h1{
+                    font-family: var(--police_titre);
+                    color: var(--couleur_ecriture);
+                    justify-content: center;
+                    display: flex;
+                    margin: 0%;
+                    margin-top: 1%;
+                    font-size: var(--titre);
+       
+                }
+                /*le paragraphe*/
+                .zone_moyen_de_nous_contacter p{
+                    color: var(--couleur_ecriture);
+                    justify-content: center;
+                    display: flex;
+                    font-size: var(--texte);
+                    margin: 2%;
+                    font-family: var(--police_ecriture);
+                }
+
+                /*bouton pour rediger à la page contact*/
+                #bouton{
+                    /* margin:auto; */
+                    box-sizing: border-box;
+                    position: relative;
+                    width: 25%;
+                    height: 25%;
+                    text-align: center;
+                    background:var(--couleur_bouton);
+                    border: 1px solid var(--bordure_bouton);
+                    border-radius: 60px;
+                    display: flex;
+                    justify-content: center;
+                    padding: 1%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 1%;
+                    font-size: var(--texte);
+                }
+   
+
+
+ @media screen and (max-width:768px) {
+    html{
+        --titre:1rem;   
+    }
+ }
+
+@media screen and (max-width:550px) {
+
+
+    html{
+        /* --texte:10px;
+        --titre:12px; */
+    }
+
+    /*pour faire mettre les mots qui dépasser du rectangle*/
+     p, h1{
+        word-break: break-word;
+    }
+
+    /* zone_moyen de nous contacter où on peut nous laisser un message */  
+    .zone_moyen_de_nous_contacter{
+        border-radius: 40px;
+        /* width:160px;
+        height: 62.766px; */
+    }
+
+     /*bouton pour rediger à la page contact*/
+    #bouton{
+        width: auto;
+    }
+
+    /* zone ou il y a tous les textes de G3B */
+    .texte_elodie,.texte_abdessalam,.texte_pierre
+    ,.texte_antoine,.texte_jeanne,.texte_hugo{
+        font-size: 10px;
+    }
+
+}

@@ -1,0 +1,299 @@
+/* Mon compte v Finale */
+html{
+    --bordure:#000000;
+    --background:#D9D9D9;
+    --couleur_bouton:#8C74E9;
+    --onglet:#28A4A9;
+    --ecriture:'Comfortaa';
+    --couleur_titre:#000000;
+    --couleur_ecriture:#000000;
+    --fond_onglet:#ffffff;
+    --police_paragraphe:1rem;
+    --police_titre:2rem;
+    --police_bouton:1rem; /*la taille du texte dans les boutons*/
+    --rectangle_capteur:#D9D9D9;
+}
+
+    body{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background:var(--background);
+    }
+
+        .page{
+            width: 100%;    
+            height: 80%;
+            margin-top:8%;
+            display: flex;
+            gap: 10%;
+        }
+
+            .zone_gauche{
+                width: 60%;
+                height: 100%;
+            }
+
+                /* groupe_mes_donnees */
+                .zone_mes_donnees{
+                position: relative;
+                height: 100%;
+                width: 100%;
+                }
+
+                    /* rectangle_mes_donnees */
+                    .rectangle_mes_donnees {
+                        box-sizing: border-box;
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        background: var(--fond_onglet);
+                        border: 2px solid var(--bordure);
+                        border-radius: 70px;
+                    }
+
+                        /* Groupe_mes_donnees */
+                        .encadrement_mes_donnees{
+                            position: relative;
+                            width: 100%;
+                            height: 14.3%;
+
+                        }
+
+                            /* encadrement_mes_donnees */
+                            .rectangle_encadrement_mes_donnees {
+                                position: relative;
+                                width: 100%;
+                                height: 100%;
+                                border-bottom: 2px solid var(--bordure);
+                                
+                       
+                            }
+                            /* titre_mes_donnees */
+                            .rectangle_encadrement_mes_donnees h1 {
+                                position: relative;
+                                width: 50%;
+                                height: 100%;
+                                margin:auto;
+                                font-family: var(--ecriture);
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: var(--police_titre);
+                                line-height: 100%;
+                                align-items: center;
+                                justify-content: center;
+                                display: flex;
+                                color: var(--couleur_titre);           
+                            }
+
+                        .zone_graphique{
+                            width: 100%;
+                            height: 85.7%;
+                            margin: auto;
+                            display: flex;
+                            flex-direction: column;
+                            padding-top:1%;
+                        }
+                        .affichage{
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+
+                        }
+                        .graphique{
+                            position: relative;
+                            width: 90%;
+                            height: 60%;
+                            display: flex;
+                            margin: auto;
+                            margin-top: 2%;
+                        }
+                        #barre{
+                            position:relative;
+                            width: 100%; 
+                            height: 100%;  
+                        }
+                        .option{
+                            width: 30%;
+                            height: 5%;
+                            margin: auto;
+                            text-align: center;
+                            font-family: var(--ecriture);
+                        }
+                        form{
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                        }
+ 
+
+            .zone_droite{
+                width: 40%;
+                height: 100%;
+                top: 19%;
+                display: flex;
+                flex-direction: column;
+                gap:10%;
+            }
+
+                /* groupe_mon_profil */
+                .zone_mon_profil{
+                    position: relative;
+                    width: 100%;
+                    height: 53.9%;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                    /* rectangle_mon_profil */
+                    .rectangle_mon_profil{
+                        box-sizing: border-box;
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        background: var(--fond_onglet);
+                        border: 2px solid var(--bordure);
+                        border-radius: 70px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center; 
+                        gap:3%;
+                        padding: 1%;
+                    }
+
+                            /* rectangle_encadrement_mon_profil */
+                            .rectangle_encadrement_mon_profil{
+                                position: relative;
+                                width: 100%;
+                                height: 20.3%;
+                                border-bottom: 2px solid var(--bordure);
+                            }
+                            /* titre_mon_profil */
+                            .rectangle_encadrement_mon_profil h1{
+                                position: relative;
+                                width: 100%;
+                                height: 19.1%;
+                                font-family: var(--ecriture);
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: var(--police_titre);
+                                line-height: 100%;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                color: var(--couleur_titre);
+                            }
+
+                            .resume_simplifie_des_graphiques,
+                            .rectangle_rythme_cardiaque_nuit_passee,
+                            .rectangle_temperature_nuit_passee{
+                                width: 100%;
+                                height: 40%;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                background: var(--background);
+                                margin: 1%;
+                            }
+
+                        /* resume_simplifie_des_graphiques */
+                        .resume_simplifie_des_graphiques p,
+                        .rectangle_rythme_cardiaque_nuit_passee p,
+                        .rectangle_temperature_nuit_passee p {
+                            position: relative;
+                            margin:0%;
+                            font-family: var(--ecriture);
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: var(--police_ecriture);
+                            line-height: 100%;
+                            text-align: center;
+                            color:var(--couleur_ecriture);     
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        .rectangle_temperature_nuit_passee{
+                            border-radius: 0 0 70px 70px;
+                        }
+
+
+                /* Groupe_conseil */
+                .zone_conseil{
+                    position: relative;
+                    width: 97.7%;
+                    height: 48.1%;
+                }
+
+                    /* rectangle_conseil */
+                    .rectangle_conseil{
+                        box-sizing: border-box;
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        background:var(--fond_onglet);
+                        border: 2px solid var(--bordure);
+                        border-radius: 70px;
+
+                    }
+                        /* encadrement_conseil */
+                        .encadrement_conseil{
+                        position: relative;
+                        width: 100%;
+                        height: 27.1%;      
+                        border-bottom: 2px solid var(--bordure);
+                        }
+
+                        /* texte_conseil */
+                        .encadrement_conseil h1{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        font-family: var(--ecriture);
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: var(--police_titre);
+                        line-height: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        color: var(--couleur_titre);
+                    }
+
+@media screen and (max-width:768px) {
+    .page{
+        flex-direction: column;
+        gap: 7%;
+    }
+    .zone_gauche{
+        width: 98%;
+        height: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .zone_droite{
+        width: 98%;
+        height: 40%;
+        flex-direction: row;
+        gap:10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .zone_conseil, .zone_mon_profil{
+        height: 100%;
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:425px) {
+    .zone_droite{
+        flex-direction: column;
+    }
+
+    
+}

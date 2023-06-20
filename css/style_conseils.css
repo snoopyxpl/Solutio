@@ -1,0 +1,380 @@
+html{
+    --background:#D9D9D9;
+    --couleur_bouton:#8C74E9;
+    --onglet:#28A4A9;
+    --bleu: #74c4e9;
+    --rectangle_sommeil:#D9D9D9;
+    --ecriture:'Comfortaa';
+    --couleur_titre:#ffffff;
+    --couleur_ecriture:#000000;
+    --mot:#ffffff;
+    --police_paragraphe:1rem;
+    --police_titre:2rem;
+    --police_titre_onglet:2rem;
+    --police_bouton:1rem; /*la taille du texte dans les boutons*/
+    --bordure:#000000;
+}
+/* CONSEILS */
+body{
+position: relative;
+width: 100vw;
+height: 100vh;
+background: var(--background);
+}
+
+        /* page sans la narbar */
+        .accueil{
+            margin-top: 6%;
+            position: relative;
+            width: 100vw;
+            height: 96vh;  
+            padding-left: 1%;
+            padding-right: 1%;   
+        }
+
+            
+            /* Le rectangle Le sommeil, comment çà marche?*/
+            .rectangle_paragraphe{
+                position: absolute;
+                width: 31%;
+                height: 20%;
+                z-index: 1;
+                float: left;
+                margin-left: 33%;
+                margin-bottom: 10%;
+            
+            }
+                
+                
+            /* titre Le sommeil, comment ça marche ? */
+            .rectangle_paragraphe h1{
+                 position: relative;
+                 font-family: var(--ecriture);
+                 font-style: normal;
+                 font-weight: 400;
+                 font-size: var(--police_titre);
+                 line-height:100%;
+                 text-align: center;
+                 margin: 0;
+                 color:var(--couleur_paragraphe);
+                 padding-bottom: 1%;
+                 padding-top: 1%;
+                 background:var(--rectangle_sommeil);
+            }
+
+            /* le paragraphe Pour être en forme et de bonne humeur, il est primordial d’avoir un sommeil de quatité.  Il est admis que pour avoir un sommeil dit complet, il faut dormir entre 7 à 8 cycle heures chez l’adulte. On y compte 5 cycles de sommeil qui doivent être consécutifs. Ne pas interrompre un cycle de sommeil est nécessaire pour bien récupérer. */
+            .rectangle_paragraphe p{
+                position: relative;
+                font-family: var(--ecriture);
+                font-style: normal;
+                font-weight: 400;
+                font-size: var(--police_paragraphe);
+                line-height: 100%;
+                align-items: center;
+                text-align: center;    
+                color: var(--couleur_ecriture);  
+                margin: 0;  
+                background: var(--rectangle_sommeil);
+                border-radius: 0 0 52px 52px;
+                padding:0 2% 0.5% 2%;
+                }
+                
+        
+
+                /*une boite qui permet d'aligner deux petites boites*/
+                .grille{
+                    position: relative;
+                    width: 90%;
+                    height: 65%;
+                    display: flex;
+                    margin: auto;
+                    gap:3%;
+                }
+                    /* des rectangles
+                    Aspect Physiologique et  Aspect Nutritif aka les petites boites */
+                    .rectangle_droite, .rectangle_gauche{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        padding: 0.5%;
+                        background: var(--onglet);
+                        border-radius: 50px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    /* les titres des deux rectangle en bleu*.*/
+                    .rectangle_gauche h1, .rectangle_droite h1{
+                        position: relative;
+                        height: 24.35%;
+                        font-family: var(--ecriture);
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: var(--police_titre_onglet);
+                        line-height: 100%;
+                        margin: 0;
+                        color: var(--couleur_titre);
+                        align-items: center;
+                        padding: 10% 3% 0% 3% ;
+                        margin: auto 0 auto 0;
+                        /* margin: 2% auto 8% 0%; */
+                     }   
+                         /*titre Aspect Physiologique */
+                        .rectangle_gauche h1{
+                            text-align: left;
+                            color: var(--couleur_titre);
+                            /* margin: 2% auto 8% 0%; */
+                            padding-right: 34%;
+                            
+                        }
+                     /* itre Aspect Nutritif */
+                    .rectangle_droite h1{
+                        padding-left: 33%;
+                        text-align: right;
+                        color:var(--couleur_titre);
+                        
+                    }
+
+                    /*paragraphe > prendre soin de son hygiène de vie > se coucher tot > comptabiliser 8 heures successives de sommeil */    
+                    .rectangle_gauche p{
+                        position: relative;
+                        height: 24.35%;
+                        font-family: var(--ecriture);
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: var(--police_paragraphe);
+                        line-height: 100%;
+                        color: var(--couleur_ecriture);
+                        margin: 0;
+                        padding: 3% 29% 3% 3%;
+                        align-items: center; 
+                    }
+
+                        /*image du corps */ 
+                        #image_corps{
+                            position: relative;
+                            width: 47.2%;
+                            height: 51.3%;
+                            background: url(../image/corps.png);
+                            background-size: contain;
+                            background-repeat: no-repeat; 
+                            background-position: center;
+                            margin-left: auto;
+                            margin-right: auto;
+                            /* margin-top:7%; */
+                        }
+                    
+
+                    /*paragraphe >Manger des aliments variés et sains > Prendre une tisane avant de dormir assure un sommeil plus profond > Eviter le café après 14h */
+                     .rectangle_droite p{
+                        position: relative;
+                        height: auto;
+                        font-family: var(--ecriture);
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: var(--police_paragraphe);
+                        line-height: 100%;
+                        margin: 0;
+                        color: var(--couleur_ecriture);
+                        padding: 2%;
+                        display: flex;
+                        align-items: center;
+                      }                   
+                
+                    
+                    /*image vitamines */
+                    #images_vitamines{
+                        position: relative;
+                        width: 50%;
+                        height: 50%;
+                        background: url(../image/vitamines.png);
+                        background-size: contain;
+                        background-repeat: no-repeat; 
+                        background-position: center; 
+                        /* margin-left: auto;
+                        margin-right: auto;
+                        margin-top: auto; */
+                        margin: auto;
+                    }
+                    
+                    /* le mot Vitamines */
+                    #images_vitamines p{
+                        position: relative;
+                        font-family: var(--ecriture);
+                        font-style: normal;
+                        font-size: var(--police_paragraphe);
+                        line-height: 100%;
+                        text-align: center;
+                        color:var(--mot);
+                        width: 100%;
+                        height: 100%;
+                        padding: 0%;
+                        margin-left: 38%;
+                    }
+
+        .rectangle_telephone{
+            display: none;
+        }
+
+@media screen and (max-width:1440px) {
+
+    .accueil{
+        margin-top: 10%;
+    }
+
+    .grille{
+        height: 50%;
+    }
+    
+}
+/* 
+@media screen and (max-width:1024px) {
+    .accueil{
+        margin-top: 10%;
+    }
+
+    .grille{
+        height: 75%;
+    } 
+} */
+
+@media screen and (max-width:1024px) { /*769px ancienne valeur*/
+html{
+    --police_titre_onglet:2rem;
+}
+    .accueil{
+        display: flex;
+        flex-direction: column;
+    }
+
+            /* rectangle_le somel, comme çà */
+            .rectangle_paragraphe{
+                position: relative;
+                width: 100%;
+                height: 20%;
+                z-index: 1;
+                margin: 0%;
+                margin-bottom: 1%;
+                display: none;
+            }
+
+            /* titre Le sommeil, comment ça marche ? */
+            .rectangle_paragraphe h1{
+                position: relative;
+                border-radius: 0;
+           }
+
+           /* le paragraphe Pour être en forme et de bonne humeur, il est primordial d’avoir un sommeil de quatité.  
+           Il est admis que pour avoir un sommeil dit complet, il faut dormir entre 7 à 8 cycle heures chez l’adulte. On y compte 5 cycles de sommeil qui doivent être consécutifs. 
+           Ne pas interrompre un cycle de sommeil est nécessaire pour bien récupérer. */
+           .rectangle_paragraphe p{
+               position: relative;
+               border-radius: 0;
+               height: 0%;
+
+               }
+
+            .grille{
+                height: 50%;
+                width: 100%;
+                margin: 0%;
+                background: var(--onglet);
+                gap: 0;
+            }
+
+                    /* des rectangles
+                    Aspect Physiologique et  Aspect Nutritif aka les petites boites */
+                    .rectangle_droite, .rectangle_gauche{
+                        position: relative;
+                        width: 50%;
+                        height: 100%;
+                        padding: 0.5%;
+                        background: none;
+                        border-radius: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        border-radius: 0%;
+                    }
+
+                    .rectangle_droite{
+                        border-left: 1px solid var(--bordure);
+                    }
+
+                    .rectangle_gauche h1, .rectangle_droite h1{
+                        width: 100%;
+                        padding: 0%;
+                        display: flex;
+                        padding-top: 2%;
+                        margin-right: auto;
+                        margin-left: auto;
+                        align-items: center;
+                        text-align: center;
+                        margin-top: 0%;
+                        word-break: break-word;
+                    }
+
+                    .rectangle_gauche p, .rectangle_droite p{
+                        padding:0;
+                        height: auto;
+                        word-break: break-word;
+                        /* height: 25%; */
+                    }
+
+
+                        /*image vitamines */
+                        #images_vitamines{
+                            margin: 0 auto 0 auto;
+                        }
+
+                        #images_vitamines p{
+                            width: 100%;
+                            height: 100%;
+                            margin-left: 15%;
+                     
+                        }
+                        
+                        #image_corps{
+                            padding-bottom: 2%;
+                        }
+
+                        .rectangle_telephone{
+                            position: relative;
+                            width: 100%;
+                            z-index: 1;
+                            margin: 0%;
+                            margin-bottom: 1%;
+                            display: initial;
+                        }
+            
+                        /* titre Le sommeil, comment ça marche ? */
+                        .rectangle_telephone h1{
+                            position: relative;
+                            font-family: var(--ecriture);
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: var(--police_titre);
+                            line-height:100%;
+                            text-align: center;
+                            margin: 0;
+                            color:var(--couleur_paragraphe);
+                            padding-bottom: 1%;
+                            padding-top: 1%;
+                       }
+            
+                       /* le paragraphe Pour être en forme et de bonne humeur, il est primordial d’avoir un sommeil de quatité.  
+                       Il est admis que pour avoir un sommeil dit complet, il faut dormir entre 7 à 8 cycle heures chez l’adulte. On y compte 5 cycles de sommeil qui doivent être consécutifs. 
+                       Ne pas interrompre un cycle de sommeil est nécessaire pour bien récupérer. */
+                       .rectangle_telephone p{
+                           position: relative;
+                           font-family: var(--ecriture);
+                           font-style: normal;
+                           font-weight: 400;
+                           font-size: var(--police_paragraphe);
+                           line-height: 100%;
+                           align-items: center;
+                           text-align: center;    
+                           color: var(--couleur_ecriture);  
+            
+                           }
+}
+
+

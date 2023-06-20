@@ -1,0 +1,109 @@
+/* image de la personne*/
+html{
+    --background:#D9D9D9;
+    --couleur_bouton:#8C74E9;
+    --onglet:#28A4A9;
+    --ecriture:'Comfortaa';
+    --couleur_ecriture:#000000;
+    --texte_bouton:#ffffff;
+    --police_paragraphe:1rem;
+    --police_titre:2rem;
+    --hover:grey;
+    --bordure:#000000;
+    }
+    
+    div.bande_d_accueil {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        left: 0px;
+        top: 0px;
+        background-color: var(--onglet);
+        z-index: 3;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    
+    ul.bande_d_accueil {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        background-color: var(--onglet);
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    
+    
+        ul.bande_d_accueil > li a:link {
+            color:var(--couleur_ecriture);
+            background-color: transparent;
+            text-decoration: none;
+            font-family: var(--ecriture);
+        }
+    
+        ul.bande_d_accueil > li a:visited {
+            color: var(--couleur_ecriture);
+            background-color: transparent;
+            text-decoration: none;
+            font-family: var(--ecriture);
+        }
+    
+        ul.bande_d_accueil > li a {
+            text-align: center;
+            display: block;
+            padding: 22px;
+            height: 100%;
+            margin: 5px;
+            background-color: var(--onglet);
+            font-family: Impact;
+            font-size: 21px;
+        }
+    
+            ul.bande_d_accueil > li a:hover {
+                background-color: var(--hover);
+            }
+    
+    .logo_entreprise{   
+        flex-grow : 3;
+        z-index: 3;
+    }
+    .mon_profile{
+        width: 300px;
+        height: auto;
+        background-image: url(../image/compte.png);/**modifier pour photo de la personne*/
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 3;
+    }
+    
+    @media (max-width: 1200px) {
+         .logo_entreprise{
+            cursor: pointer;
+        }
+    
+        ul.bande_d_accueil{
+            display: none;
+        }
+    
+        ul.bande_d_accueil li{
+            margin : 5px;
+            border : 2px solid var(--bordure);
+        }
+        
+        div.bande_d_accueil{
+            position : relative;
+        }
+    
+    
+        div.bande_d_accueil:hover ul.bande_d_accueil, div.bande_d_accueil{
+            display : flex;
+            flex-flow: column nowrap;
+        } 
+    
+        
+    }
+    
+    
+    

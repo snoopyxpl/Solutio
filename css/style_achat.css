@@ -1,0 +1,309 @@
+/*création de variable*/
+html{
+    --background:#D9D9D9;
+    --couleur_bouton:#8C74E9;
+    --onglet:#28A4A9;
+    --bleu: #74c4e9;
+    --ecriture:'Comfortaa';
+    --couleur_titre:#ffffff;
+    --couleur_ecriture:#000000;
+    --texte_bouton:#ffffff;
+    --police_paragraphe:1rem;
+    --police_titre:2rem;
+    --police_bouton:1rem; /*la taille du texte dans les boutons*/
+    --bordure:#000000;
+    --cercle:300px;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background:var(--background);
+}
+
+/* page */
+    .page{
+        position: relative;
+        width: 100%;
+        height: 91.1%;
+        margin-top: 7%;
+        display: flex;
+    }
+
+/* rectangle Onglet */
+.onglet{
+    position: relative;
+    width: 70%;
+    height: 83%;
+    margin: auto auto auto auto;
+    background: var(--onglet);
+    border-radius: 126px;
+    display: flex;
+    flex-direction: column;
+}  
+/*pour diviser l'onglet en deux*/
+.division{
+    display: flex;
+    width: 100%;
+    height: 80%;
+}
+
+.onglet_gauche{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+/* Achat du bracelet */
+.onglet h1{
+    position: relative;
+    width: 50%;
+    height: 7%;
+    font-family: var(--ecriture);
+    font-style: var(--police_titre);
+    line-height: 100%;
+    align-items: center;
+    text-align: center;
+    border-radius: 40px;
+    color: var(--couleur_ecriture);
+    background:var(--background);
+    border: 1px solid var(--bordure);
+    margin:auto;
+
+}
+
+
+/* catégorie */
+.categorie{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    gap: 2%;
+    margin: 2% auto auto auto;
+    flex-direction: column;
+}
+#erreur{
+    width: 70%;
+    margin: 0 auto 0 auto;
+    background: #ffffff;
+    color: red;
+    font-family: var(--ecriture);
+    font-size: var(--police_paragraphe);
+    text-align: center;
+    align-items: center;
+}
+
+/*ligne du tableau*/
+.zone_de_regroupement{
+    width: 100%;
+    height: 10%;
+    display:flex;
+    gap:1%;
+}
+/*zone de réponse*/
+    .reponse_n_appt_etage_code{
+        display: flex; 
+        width: 100%;
+        gap:20%;    
+        align-items: stretch;
+    }
+/*zone de réponse*/
+    .n_appt, .etage,.code{
+        width: 100%;
+    }
+
+/*zone de réponse*/
+    .etage{
+        align-items: center ;
+    }
+
+/*zone de réponse aka où on rentre les réponses*/
+input{
+    width: 100%;
+    height: auto;
+    gap: 2%;
+    font-family: var(--ecriture);
+
+}
+/*pour identifier les*/
+label{
+    width: 60%;
+    height: auto;
+    background: var(--background);
+    align-items: center ;
+    border: 1px solid var(--bordure);
+    font-family: var(--ecriture);
+    display: flex;
+    font-size: var(--police_paragraphe);
+
+}
+
+
+
+/* .info_n_appt_etage_code{
+    width: 45%;
+    background: var(--background);
+    text-align: center;
+
+    border: 1px solid var(--bordure);
+    font-family: var(--ecriture);
+} */
+
+/* rectangle_valider */
+.valider{
+    position: relative;
+    width: 50%;
+    height: 5%;
+    margin: auto;
+
+}
+.bouton{
+    width: 100%;
+    height: 100%;
+    font-family: var(--ecriture);
+    font-size: var(--police_paragraphe);
+    line-height: 100%;
+    align-items: center;
+    text-align: center;
+    color:var(--texte_bouton);
+    background:var(--couleur_bouton);
+    border-radius: 40px;
+}
+.bouton:hover{
+    color:var(--couleur_bouton);
+    background:var(--texte_bouton );
+}
+
+
+
+
+
+.onglet_droite{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Bracelet */
+#ima_bracelet{
+position: relative;
+margin:auto;
+width: 70%;
+height: 30%;
+background-image: url("../image/bracelet_v2.png");
+background-size: contain;
+background-repeat: no-repeat; 
+align-items: center;
+display: flex;
+
+}
+
+/* zone_prix */
+
+
+
+/* Ellipse 1 */
+.prix{
+    position: relative;
+    width: var(--cercle);
+    height:var(--cercle);
+    margin: auto;
+    background:var(--couleur_bouton);
+    align-items: center;
+    border-radius: 160px;
+    display: flex;
+    color: var(--texte_bouton);
+    border: 1px solid var(--bordure);
+}
+.prix p{
+   margin: auto;
+    font-family:var(--ecriture);
+    font-style: normal;
+    font-size: var(--police_paragraphe);
+    line-height: 100%;
+}
+.telephone{
+
+    display: none;
+}
+@media  screen and (max-width:1440px){
+    html{
+        --cercle:140px;
+    } 
+}
+@media screen and (max-width:1024px){
+html{
+    --police_titre:1rem;
+}    
+.onglet h1{
+    font-size: small;
+}
+label{
+}
+}
+@media screen and (max-width:768px) {
+    html{
+        --cercle:90px;
+        --police_paragraphe:0.5rem;
+    }
+}
+@media screen and (max-width:425px) {
+    .page{
+        display: flex;
+        flex-direction: column;
+    }
+    .onglet{
+        width: 90%;
+    }
+    .onglet_droite{
+        display: none;
+    }
+    .onglet_gauche{
+        width: 100%;
+    }
+    .telephone{
+        display: initial;
+        display:flex;
+    }
+
+    /* Bracelet */
+    #ima_bracelet{
+    position: relative;
+    margin:0 auto 0 auto;
+    width: 30%;
+    height: 100%;
+    background-image: url("../image/bracelet_v2.png");
+    background-size: contain;
+    background-repeat: no-repeat; 
+    align-items: center;
+    display: flex;
+    }
+    
+    /* zone_prix */
+    
+    
+    
+    /* Ellipse 1 */
+    .prix{
+        position: relative;
+        width: var(--cercle);
+        height:var(--cercle);
+        margin: auto;
+        background:var(--couleur_bouton);
+        align-items: center;
+        border-radius: 160px;
+        display: flex;
+        color: #000000;
+    }
+    .prix p{
+       margin: auto;
+        font-family:var(--ecriture);
+        font-style: normal;
+        font-size: var(--police_paragraphe);
+        line-height: 100%;
+    }
+
+}
